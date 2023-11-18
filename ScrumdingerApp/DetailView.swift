@@ -9,6 +9,9 @@ import SwiftUI
 
 struct DetailView: View {
     let scrum: DailyScrum
+    
+    @State private var isPresentingEditView = false
+    
     var body: some View {
         List {
             /// Sections create visual distinctions within your list. They help you to chunk content and establish groups in the information hierarchy of the list view.
@@ -43,6 +46,30 @@ struct DetailView: View {
             }
         }
         .navigationTitle(scrum.title)
+        .toolbar {
+            Button("Edit") {
+                isPresentingEditView = true
+            }
+        }
+        /// Modal views remove users from the main navigation flow of the app. Use modality for short, self-contained tasks. For more information about the different types of modal presentation and when to use modality effectively in your apps, refer to [Modality](https://developer.apple.com/design/human-interface-guidelines/modality) in the Human Interface Guidelines.
+        .sheet(isPresented: $isPresentingEditView) {
+            NavigationStack {
+                DetailEditView()
+                    .navigationTitle(scrum.title)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                isPresentingEditView = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") {
+                                isPresentingEditView = false
+                            }
+                        }
+                    }
+            }
+        }
     }
 }
 

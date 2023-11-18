@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB7D33CC2B08869E0011C601 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7D33CB2B08869E0011C601 /* DetailEditView.swift */; };
 		CBA092022B0450F6005CF9B6 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA092012B0450F6005CF9B6 /* TrailingIconLabelStyle.swift */; };
 		CBA092042B04543B005CF9B6 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA092032B04543B005CF9B6 /* ScrumsView.swift */; };
 		CBBDAD362B02B3F900F2BC9C /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDAD352B02B3F900F2BC9C /* ScrumdingerApp.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB7D33CB2B08869E0011C601 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		CBA092012B0450F6005CF9B6 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		CBA092032B04543B005CF9B6 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		CBBDAD322B02B3F900F2BC9C /* ScrumdingerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumdingerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 				CBA092012B0450F6005CF9B6 /* TrailingIconLabelStyle.swift */,
 				CBA092032B04543B005CF9B6 /* ScrumsView.swift */,
 				CBDB14632B056BBA00874A0A /* DetailView.swift */,
+				CB7D33CB2B08869E0011C601 /* DetailEditView.swift */,
 			);
 			path = ScrumdingerApp;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				CBBDAD632B02EE7300F2BC9C /* DailyScrum.swift in Sources */,
 				CBDB14642B056BBA00874A0A /* DetailView.swift in Sources */,
+				CB7D33CC2B08869E0011C601 /* DetailEditView.swift in Sources */,
 				CBA092022B0450F6005CF9B6 /* TrailingIconLabelStyle.swift in Sources */,
 				CBBDAD612B02EA4100F2BC9C /* Theme.swift in Sources */,
 				CBA092042B04543B005CF9B6 /* ScrumsView.swift in Sources */,
