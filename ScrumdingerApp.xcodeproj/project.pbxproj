@@ -19,6 +19,7 @@
 		CBBDAD612B02EA4100F2BC9C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDAD602B02EA4100F2BC9C /* Theme.swift */; };
 		CBBDAD632B02EE7300F2BC9C /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDAD622B02EE7300F2BC9C /* DailyScrum.swift */; };
 		CBBDAD652B02F07600F2BC9C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDAD642B02F07600F2BC9C /* CardView.swift */; };
+		CBDB14642B056BBA00874A0A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB14632B056BBA00874A0A /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		CBBDAD602B02EA4100F2BC9C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CBBDAD622B02EE7300F2BC9C /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		CBBDAD642B02F07600F2BC9C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CBDB14632B056BBA00874A0A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				CBBDAD642B02F07600F2BC9C /* CardView.swift */,
 				CBA092012B0450F6005CF9B6 /* TrailingIconLabelStyle.swift */,
 				CBA092032B04543B005CF9B6 /* ScrumsView.swift */,
+				CBDB14632B056BBA00874A0A /* DetailView.swift */,
 			);
 			path = ScrumdingerApp;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBBDAD632B02EE7300F2BC9C /* DailyScrum.swift in Sources */,
+				CBDB14642B056BBA00874A0A /* DetailView.swift in Sources */,
 				CBA092022B0450F6005CF9B6 /* TrailingIconLabelStyle.swift in Sources */,
 				CBBDAD612B02EA4100F2BC9C /* Theme.swift in Sources */,
 				CBA092042B04543B005CF9B6 /* ScrumsView.swift in Sources */,
