@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct DetailView: View {
-    let scrum: DailyScrum
+    /// Using a binding ensures that DetailView renders again when the user’s interaction modifies scrum.
+    @Binding var scrum: DailyScrum
     
+    /// You’ll update this empty scrum to match the selected scrum when the user taps the Edit button.
+    @State private var editingScrum = DailyScrum.emptyScrum
     @State private var isPresentingEditView = false
     
     var body: some View {
@@ -49,12 +52,13 @@ struct DetailView: View {
         .toolbar {
             Button("Edit") {
                 isPresentingEditView = true
+                editingScrum = scrum
             }
         }
         /// Modal views remove users from the main navigation flow of the app. Use modality for short, self-contained tasks. For more information about the different types of modal presentation and when to use modality effectively in your apps, refer to [Modality](https://developer.apple.com/design/human-interface-guidelines/modality) in the Human Interface Guidelines.
         .sheet(isPresented: $isPresentingEditView) {
             NavigationStack {
-                DetailEditView()
+                DetailEditView(scrum: $editingScrum)
                     .navigationTitle(scrum.title)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
@@ -65,6 +69,7 @@ struct DetailView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isPresentingEditView = false
+                                scrum = editingScrum
                             }
                         }
                     }
@@ -75,6 +80,6 @@ struct DetailView: View {
 
 #Preview {
     NavigationStack {
-        DetailView(scrum: DailyScrum.sampleData[0])
+        DetailView(scrum: .constant(DailyScrum.sampleData[0]))
     }
 }
