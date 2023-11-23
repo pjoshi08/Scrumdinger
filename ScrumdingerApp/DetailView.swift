@@ -12,7 +12,7 @@ struct DetailView: View {
     @Binding var scrum: DailyScrum
     
     /// You’ll update this empty scrum to match the selected scrum when the user taps the Edit button.
-    @State private var editingScrum = DailyScrum.emptyScrum
+    @State private var data = DailyScrum.Data()
     @State private var isPresentingEditView = false
     
     var body: some View {
@@ -20,7 +20,7 @@ struct DetailView: View {
             /// Sections create visual distinctions within your list. They help you to chunk content and establish groups in the information hierarchy of the list view.
             Section(header: Text("Meeting Info")) {
                 /// Adding NavigationLink wraps the label in a gesture recognizer so that users can tap this row to transition to the meeting timer screen.
-                NavigationLink(destination: MeetingView()) {
+                NavigationLink(destination: MeetingView(scrum: $scrum)) {
                     Label("Start Meeting", systemImage: "timer")
                         .font(.headline)
                         .foregroundColor(.accentColor)
@@ -52,13 +52,13 @@ struct DetailView: View {
         .toolbar {
             Button("Edit") {
                 isPresentingEditView = true
-                editingScrum = scrum
+                data = scrum.data
             }
         }
         /// Modal views remove users from the main navigation flow of the app. Use modality for short, self-contained tasks. For more information about the different types of modal presentation and when to use modality effectively in your apps, refer to [Modality](https://developer.apple.com/design/human-interface-guidelines/modality) in the Human Interface Guidelines.
         .sheet(isPresented: $isPresentingEditView) {
             NavigationStack {
-                DetailEditView(scrum: $editingScrum)
+                DetailEditView(data: $data)
                     .navigationTitle(scrum.title)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
@@ -69,7 +69,7 @@ struct DetailView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isPresentingEditView = false
-                                scrum = editingScrum
+                                scrum.update(from: data)
                             }
                         }
                     }

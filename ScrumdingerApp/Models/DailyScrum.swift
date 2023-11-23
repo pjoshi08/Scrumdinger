@@ -12,15 +12,6 @@ struct DailyScrum: Identifiable {
     var title: String
     var attendees: [Attendee]
     var lengthInMinutes: Int
-    var lengthInMinutesAsDouble: Double {
-        get {
-            /// For Swift functions that return a value, you can omit the return keyword when the body is a single expression.
-            Double(lengthInMinutes)
-        }
-        set {
-            lengthInMinutes = Int(newValue)
-        }
-    }
     var theme: Theme
     
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
@@ -30,7 +21,6 @@ struct DailyScrum: Identifiable {
         self.lengthInMinutes = lengthInMinutes
         self.theme = theme
     }
-
 }
 
 extension DailyScrum {
@@ -42,6 +32,24 @@ extension DailyScrum {
             self.id = id
             self.name = name
         }
+    }
+    
+    struct Data {
+        var title: String = ""
+        var attendees: [Attendee] = []
+        var lengthInMinutes: Double = 5
+        var theme: Theme = .seafoam
+    }
+    
+    var data: Data {
+        Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
+    }
+    
+    mutating func update(from data: Data) {
+        title = data.title
+        attendees = data.attendees
+        lengthInMinutes = Int(data.lengthInMinutes)
+        theme = data.theme
     }
     
     static var emptyScrum: DailyScrum {

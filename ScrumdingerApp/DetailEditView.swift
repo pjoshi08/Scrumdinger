@@ -9,44 +9,44 @@ import SwiftUI
 
 struct DetailEditView: View {
     /// scrum is now an initialization parameter, so you need to remove the private attribute and DailyScrum initialization.
-    @Binding var scrum: DailyScrum
+    @Binding var data: DailyScrum.Data
     @State private var newAttendeeName = ""
     
     var body: some View {
         Form {
             Section(header: Text("Meeting Info")) {
                 /// $ syntax creates a binding to the scrum.title. The current view manages the state of the data property.
-                TextField("Title", text: $scrum.title)
+                TextField("Title", text: $data.title)
                 HStack {
-                    Slider(value: $scrum.lengthInMinutesAsDouble, in: 5...30, step: 1) {
-                        Text("Length") /// accessibility use
+                    Slider(value: $data.lengthInMinutes, in: 5...30, step: 1) {
+                        Text("Length")
                     }
-                    .accessibilityValue("\(scrum.lengthInMinutes) minutes")
+                    .accessibilityValue("\(Int(data.lengthInMinutes)) minutes")
                     Spacer()
                     /// When the slider changes, you update a daily scrum state property that triggers a UI update. Because the text label displays the state property and the system automatically updates the views that depend on the state property, the slider and the label stay in sync.
-                    Text("\(scrum.lengthInMinutes) minutes")
+                    Text("\(Int(data.lengthInMinutes)) minutes")
                         .accessibilityHidden(true)
                 }
-                ThemePicker(selection: $scrum.theme)
+                ThemePicker(selection: $data.theme)
             }
             Section(header: Text("Attendees")) {
-                ForEach(scrum.attendees) { attendee in
+                ForEach(data.attendees) { attendee in
                     Text(attendee.name)
                 }
                 .onDelete { indices in
-                    scrum.attendees.remove(atOffsets: indices)
+                    data.attendees.remove(atOffsets: indices)
                 }
                 HStack {
                     TextField("New Attendee", text: $newAttendeeName)
                     Button(action: {
                         withAnimation {
                             let attendee = DailyScrum.Attendee(name: newAttendeeName)
-                            scrum.attendees.append(attendee)
+                            data.attendees.append(attendee)
                             newAttendeeName = ""
                         }
                     }) {
                         Image(systemName: "plus.circle.fill")
-                            .accessibilityLabel("Add Attendee")
+                            .accessibilityLabel("Add attendee")
                     }
                     .disabled(newAttendeeName.isEmpty)
                 }
@@ -56,5 +56,5 @@ struct DetailEditView: View {
 }
 
 #Preview {
-    DetailEditView(scrum: .constant(DailyScrum.sampleData[0]))
+    DetailEditView(data: .constant(DailyScrum.sampleData[0].data))
 }
