@@ -31,6 +31,7 @@
 		CBBDAD632B02EE7300F2BC9C /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDAD622B02EE7300F2BC9C /* DailyScrum.swift */; };
 		CBBDAD652B02F07600F2BC9C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDAD642B02F07600F2BC9C /* CardView.swift */; };
 		CBDB14642B056BBA00874A0A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB14632B056BBA00874A0A /* DetailView.swift */; };
+		CBE5F53C2B146A910086FE7E /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5F53B2B146A910086FE7E /* ScrumStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		CBBDAD622B02EE7300F2BC9C /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		CBBDAD642B02F07600F2BC9C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CBDB14632B056BBA00874A0A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CBE5F53B2B146A910086FE7E /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				CB9A14AD2B0C52F60063D72D /* AVPlayer+Ding.swift */,
 				CB9A14AF2B0C53900063D72D /* ScrumTimer.swift */,
 				CB4E69962B11C2860069014B /* History.swift */,
+				CBE5F53B2B146A910086FE7E /* ScrumStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				CBBDAD632B02EE7300F2BC9C /* DailyScrum.swift in Sources */,
 				CBDB14642B056BBA00874A0A /* DetailView.swift in Sources */,
 				CB798D702B0C224E005649BC /* MeetingHeaderView.swift in Sources */,
+				CBE5F53C2B146A910086FE7E /* ScrumStore.swift in Sources */,
 				CB7AF03D2B0FFE6D00E7EB64 /* MeetingFooterView.swift in Sources */,
 				CB7D33CC2B08869E0011C601 /* DetailEditView.swift in Sources */,
 				CB9A14B02B0C53900063D72D /* ScrumTimer.swift in Sources */,
