@@ -11,6 +11,8 @@ import SwiftUI
 struct ScrumdingerApp: App {
     // @State private var scrums = DailyScrum.sampleData
     @StateObject private var store = ScrumStore()
+    /// Default va;lue of an optional is nil
+    @State private var errorWrapper: ErrorWrapper?
     
     var body: some Scene {
         /// WindowGroup is one of the primitive scenes that SwiftUI provides. In iOS, the views you add to the WindowGroup scene builder are presented in a window that fills the device’s entire screen.
@@ -21,17 +23,25 @@ struct ScrumdingerApp: App {
                         do {
                             try await store.save(scrums: store.scrums)
                         } catch {
-                            fatalError(error.localizedDescription)
+                            errorWrapper = ErrorWrapper(error: error, guidance: "Try again later.")
                         }
                     }
                 }
-                    .task {
-                        do {
-                            try await store.load()
-                        } catch {
-                            fatalError(error.localizedDescription)
-                        }
+                .task {
+                    do {
+                        try await store.load()
+                    } catch {
+                        errorWrapper = ErrorWrapper(error: error,
+                                                    guidance: "Scrumdinger will load sample data and continue.")
                     }
+                }
+                /// The modal sheet provides a closure to execute code when the user dismisses the modal sheet, and a closure to supply a view to present modally.
+                .sheet(item: $errorWrapper) {
+                    /// Because you provide a binding to the condition that initiates the presentation, SwiftUI resets the optional error wrapper to nil when the user dismisses the presentation.
+                    store.scrums = DailyScrum.sampleData
+                } content: { wrapper in
+                    ErrorView(errorWrapper: wrapper)
+                }
             }
         }
     }
