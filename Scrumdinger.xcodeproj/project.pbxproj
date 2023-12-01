@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB01CE812B16FB4100CE9C3B /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01CE802B16FB4100CE9C3B /* MeetingTimerView.swift */; };
+		CB01CE832B16FD9500CE9C3B /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01CE822B16FD9500CE9C3B /* SpeakerArc.swift */; };
+		CB4794552B185E45003D207B /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4794542B185E45003D207B /* SpeechRecognizer.swift */; };
 		CB4AC5052B15C167004B0E07 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4AC5042B15C167004B0E07 /* ErrorWrapper.swift */; };
 		CB4AC5072B15C1ED004B0E07 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4AC5062B15C1ED004B0E07 /* ErrorView.swift */; };
 		CB4E69972B11C2860069014B /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E69962B11C2860069014B /* History.swift */; };
@@ -14,9 +17,9 @@
 		CB6C40462B096A4F00389B46 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C40452B096A4F00389B46 /* ThemePicker.swift */; };
 		CB798D702B0C224E005649BC /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB798D6F2B0C224E005649BC /* MeetingHeaderView.swift */; };
 		CB7AF03D2B0FFE6D00E7EB64 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AF03C2B0FFE6D00E7EB64 /* MeetingFooterView.swift */; };
-		CB7AF0442B10085300E7EB64 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = CB7AF0432B10085300E7EB64 /* ding.wav */; };
 		CB7AF0462B1008C100E7EB64 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AF0452B1008C100E7EB64 /* NewScrumSheet.swift */; };
 		CB7D33CC2B08869E0011C601 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7D33CB2B08869E0011C601 /* DetailEditView.swift */; };
+		CB8B8B3B2B19B005008BC5AF /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8B8B3A2B19B005008BC5AF /* HistoryView.swift */; };
 		CB9A14AC2B0C50870063D72D /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A14AB2B0C50870063D72D /* ScrumProgressViewStyle.swift */; };
 		CB9A14AE2B0C52F60063D72D /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A14AD2B0C52F60063D72D /* AVPlayer+Ding.swift */; };
 		CB9A14B02B0C53900063D72D /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A14AF2B0C53900063D72D /* ScrumTimer.swift */; };
@@ -54,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB01CE802B16FB4100CE9C3B /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		CB01CE822B16FD9500CE9C3B /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
+		CB335FEF2B1905E0005A1F5D /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		CB4794542B185E45003D207B /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		CB4AC5042B15C167004B0E07 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 		CB4AC5062B15C1ED004B0E07 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		CB4E69962B11C2860069014B /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
@@ -61,22 +68,22 @@
 		CB6C40452B096A4F00389B46 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		CB798D6F2B0C224E005649BC /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 		CB7AF03C2B0FFE6D00E7EB64 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
-		CB7AF0432B10085300E7EB64 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ding.wav; path = ScrumdingerApp/Resources/ding.wav; sourceTree = "<group>"; };
 		CB7AF0452B1008C100E7EB64 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		CB7D33CB2B08869E0011C601 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
+		CB8B8B3A2B19B005008BC5AF /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		CB9A14AB2B0C50870063D72D /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
 		CB9A14AD2B0C52F60063D72D /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		CB9A14AF2B0C53900063D72D /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		CBA092012B0450F6005CF9B6 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		CBA092032B04543B005CF9B6 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
-		CBBDAD322B02B3F900F2BC9C /* ScrumdingerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumdingerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBDAD322B02B3F900F2BC9C /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBDAD352B02B3F900F2BC9C /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		CBBDAD372B02B3F900F2BC9C /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		CBBDAD392B02B3FA00F2BC9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBBDAD3C2B02B3FA00F2BC9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CBBDAD422B02B3FA00F2BC9C /* ScrumdingerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBDAD422B02B3FA00F2BC9C /* ScrumdingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBDAD462B02B3FA00F2BC9C /* ScrumdingerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerAppTests.swift; sourceTree = "<group>"; };
-		CBBDAD4C2B02B3FA00F2BC9C /* ScrumdingerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBDAD4C2B02B3FA00F2BC9C /* ScrumdingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBDAD502B02B3FA00F2BC9C /* ScrumdingerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerAppUITests.swift; sourceTree = "<group>"; };
 		CBBDAD522B02B3FA00F2BC9C /* ScrumdingerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CBBDAD602B02EA4100F2BC9C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -111,35 +118,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CBBDAD292B02B3F900F2BC9C = {
+		CB335FED2B190345005A1F5D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CB7AF0432B10085300E7EB64 /* ding.wav */,
-				CBBDAD342B02B3F900F2BC9C /* ScrumdingerApp */,
-				CBBDAD452B02B3FA00F2BC9C /* ScrumdingerAppTests */,
-				CBBDAD4F2B02B3FA00F2BC9C /* ScrumdingerAppUITests */,
-				CBBDAD332B02B3F900F2BC9C /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		CBBDAD332B02B3F900F2BC9C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CBBDAD322B02B3F900F2BC9C /* ScrumdingerApp.app */,
-				CBBDAD422B02B3FA00F2BC9C /* ScrumdingerAppTests.xctest */,
-				CBBDAD4C2B02B3FA00F2BC9C /* ScrumdingerAppUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CBBDAD342B02B3F900F2BC9C /* ScrumdingerApp */ = {
-			isa = PBXGroup;
-			children = (
-				CBBDAD5F2B02E9F200F2BC9C /* Models */,
-				CBBDAD352B02B3F900F2BC9C /* ScrumdingerApp.swift */,
 				CBBDAD372B02B3F900F2BC9C /* MeetingView.swift */,
-				CBBDAD392B02B3FA00F2BC9C /* Assets.xcassets */,
-				CBBDAD3B2B02B3FA00F2BC9C /* Preview Content */,
 				CBBDAD642B02F07600F2BC9C /* CardView.swift */,
 				CBA092012B0450F6005CF9B6 /* TrailingIconLabelStyle.swift */,
 				CBA092032B04543B005CF9B6 /* ScrumsView.swift */,
@@ -152,8 +134,52 @@
 				CB7AF03C2B0FFE6D00E7EB64 /* MeetingFooterView.swift */,
 				CB7AF0452B1008C100E7EB64 /* NewScrumSheet.swift */,
 				CB4AC5062B15C1ED004B0E07 /* ErrorView.swift */,
+				CB01CE802B16FB4100CE9C3B /* MeetingTimerView.swift */,
+				CB01CE822B16FD9500CE9C3B /* SpeakerArc.swift */,
+				CB8B8B3A2B19B005008BC5AF /* HistoryView.swift */,
 			);
-			path = ScrumdingerApp;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB335FF12B1906F8005A1F5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB335FEF2B1905E0005A1F5D /* ding.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBBDAD292B02B3F900F2BC9C = {
+			isa = PBXGroup;
+			children = (
+				CBBDAD342B02B3F900F2BC9C /* Scrumdinger */,
+				CBBDAD452B02B3FA00F2BC9C /* ScrumdingerAppTests */,
+				CBBDAD4F2B02B3FA00F2BC9C /* ScrumdingerAppUITests */,
+				CBBDAD332B02B3F900F2BC9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBBDAD332B02B3F900F2BC9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBBDAD322B02B3F900F2BC9C /* Scrumdinger.app */,
+				CBBDAD422B02B3FA00F2BC9C /* ScrumdingerTests.xctest */,
+				CBBDAD4C2B02B3FA00F2BC9C /* ScrumdingerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBBDAD342B02B3F900F2BC9C /* Scrumdinger */ = {
+			isa = PBXGroup;
+			children = (
+				CBBDAD352B02B3F900F2BC9C /* ScrumdingerApp.swift */,
+				CBBDAD5F2B02E9F200F2BC9C /* Models */,
+				CB335FED2B190345005A1F5D /* Views */,
+				CBBDAD392B02B3FA00F2BC9C /* Assets.xcassets */,
+				CBBDAD3B2B02B3FA00F2BC9C /* Preview Content */,
+				CB335FF12B1906F8005A1F5D /* Resources */,
+			);
+			path = Scrumdinger;
 			sourceTree = "<group>";
 		};
 		CBBDAD3B2B02B3FA00F2BC9C /* Preview Content */ = {
@@ -191,6 +217,7 @@
 				CB4E69962B11C2860069014B /* History.swift */,
 				CBE5F53B2B146A910086FE7E /* ScrumStore.swift */,
 				CB4AC5042B15C167004B0E07 /* ErrorWrapper.swift */,
+				CB4794542B185E45003D207B /* SpeechRecognizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,9 +225,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBBDAD312B02B3F900F2BC9C /* ScrumdingerApp */ = {
+		CBBDAD312B02B3F900F2BC9C /* Scrumdinger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBBDAD562B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "ScrumdingerApp" */;
+			buildConfigurationList = CBBDAD562B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "Scrumdinger" */;
 			buildPhases = (
 				CBBDAD2E2B02B3F900F2BC9C /* Sources */,
 				CBBDAD2F2B02B3F900F2BC9C /* Frameworks */,
@@ -210,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = ScrumdingerApp;
+			name = Scrumdinger;
 			productName = ScrumdingerApp;
-			productReference = CBBDAD322B02B3F900F2BC9C /* ScrumdingerApp.app */;
+			productReference = CBBDAD322B02B3F900F2BC9C /* Scrumdinger.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CBBDAD412B02B3FA00F2BC9C /* ScrumdingerAppTests */ = {
+		CBBDAD412B02B3FA00F2BC9C /* ScrumdingerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBBDAD592B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "ScrumdingerAppTests" */;
+			buildConfigurationList = CBBDAD592B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "ScrumdingerTests" */;
 			buildPhases = (
 				CBBDAD3E2B02B3FA00F2BC9C /* Sources */,
 				CBBDAD3F2B02B3FA00F2BC9C /* Frameworks */,
@@ -228,14 +255,14 @@
 			dependencies = (
 				CBBDAD442B02B3FA00F2BC9C /* PBXTargetDependency */,
 			);
-			name = ScrumdingerAppTests;
+			name = ScrumdingerTests;
 			productName = ScrumdingerAppTests;
-			productReference = CBBDAD422B02B3FA00F2BC9C /* ScrumdingerAppTests.xctest */;
+			productReference = CBBDAD422B02B3FA00F2BC9C /* ScrumdingerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CBBDAD4B2B02B3FA00F2BC9C /* ScrumdingerAppUITests */ = {
+		CBBDAD4B2B02B3FA00F2BC9C /* ScrumdingerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBBDAD5C2B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "ScrumdingerAppUITests" */;
+			buildConfigurationList = CBBDAD5C2B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "ScrumdingerUITests" */;
 			buildPhases = (
 				CBBDAD482B02B3FA00F2BC9C /* Sources */,
 				CBBDAD492B02B3FA00F2BC9C /* Frameworks */,
@@ -246,9 +273,9 @@
 			dependencies = (
 				CBBDAD4E2B02B3FA00F2BC9C /* PBXTargetDependency */,
 			);
-			name = ScrumdingerAppUITests;
+			name = ScrumdingerUITests;
 			productName = ScrumdingerAppUITests;
-			productReference = CBBDAD4C2B02B3FA00F2BC9C /* ScrumdingerAppUITests.xctest */;
+			productReference = CBBDAD4C2B02B3FA00F2BC9C /* ScrumdingerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -274,7 +301,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CBBDAD2D2B02B3F900F2BC9C /* Build configuration list for PBXProject "ScrumdingerApp" */;
+			buildConfigurationList = CBBDAD2D2B02B3F900F2BC9C /* Build configuration list for PBXProject "Scrumdinger" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -287,9 +314,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBBDAD312B02B3F900F2BC9C /* ScrumdingerApp */,
-				CBBDAD412B02B3FA00F2BC9C /* ScrumdingerAppTests */,
-				CBBDAD4B2B02B3FA00F2BC9C /* ScrumdingerAppUITests */,
+				CBBDAD312B02B3F900F2BC9C /* Scrumdinger */,
+				CBBDAD412B02B3FA00F2BC9C /* ScrumdingerTests */,
+				CBBDAD4B2B02B3FA00F2BC9C /* ScrumdingerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -299,7 +326,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7AF0442B10085300E7EB64 /* ding.wav in Resources */,
 				CBBDAD3D2B02B3FA00F2BC9C /* Preview Assets.xcassets in Resources */,
 				CBBDAD3A2B02B3FA00F2BC9C /* Assets.xcassets in Resources */,
 			);
@@ -330,8 +356,11 @@
 				CB6C40462B096A4F00389B46 /* ThemePicker.swift in Sources */,
 				CB9A14AC2B0C50870063D72D /* ScrumProgressViewStyle.swift in Sources */,
 				CBBDAD632B02EE7300F2BC9C /* DailyScrum.swift in Sources */,
+				CB01CE832B16FD9500CE9C3B /* SpeakerArc.swift in Sources */,
 				CB4AC5072B15C1ED004B0E07 /* ErrorView.swift in Sources */,
 				CBDB14642B056BBA00874A0A /* DetailView.swift in Sources */,
+				CB8B8B3B2B19B005008BC5AF /* HistoryView.swift in Sources */,
+				CB01CE812B16FB4100CE9C3B /* MeetingTimerView.swift in Sources */,
 				CB798D702B0C224E005649BC /* MeetingHeaderView.swift in Sources */,
 				CBE5F53C2B146A910086FE7E /* ScrumStore.swift in Sources */,
 				CB7AF03D2B0FFE6D00E7EB64 /* MeetingFooterView.swift in Sources */,
@@ -341,6 +370,7 @@
 				CB7AF0462B1008C100E7EB64 /* NewScrumSheet.swift in Sources */,
 				CBA092022B0450F6005CF9B6 /* TrailingIconLabelStyle.swift in Sources */,
 				CBBDAD612B02EA4100F2BC9C /* Theme.swift in Sources */,
+				CB4794552B185E45003D207B /* SpeechRecognizer.swift in Sources */,
 				CBA092042B04543B005CF9B6 /* ScrumsView.swift in Sources */,
 				CB9A14AE2B0C52F60063D72D /* AVPlayer+Ding.swift in Sources */,
 				CBBDAD382B02B3F900F2BC9C /* MeetingView.swift in Sources */,
@@ -372,12 +402,12 @@
 /* Begin PBXTargetDependency section */
 		CBBDAD442B02B3FA00F2BC9C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBBDAD312B02B3F900F2BC9C /* ScrumdingerApp */;
+			target = CBBDAD312B02B3F900F2BC9C /* Scrumdinger */;
 			targetProxy = CBBDAD432B02B3FA00F2BC9C /* PBXContainerItemProxy */;
 		};
 		CBBDAD4E2B02B3FA00F2BC9C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBBDAD312B02B3F900F2BC9C /* ScrumdingerApp */;
+			target = CBBDAD312B02B3F900F2BC9C /* Scrumdinger */;
 			targetProxy = CBBDAD4D2B02B3FA00F2BC9C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -509,9 +539,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ScrumdingerApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ScrumDinger;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -522,7 +555,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devarcher.ScrumdingerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devarcher.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -537,9 +570,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ScrumdingerApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ScrumDinger;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -550,7 +586,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devarcher.ScrumdingerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devarcher.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -573,7 +609,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrumdingerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScrumdingerApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scrumdinger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scrumdinger";
 			};
 			name = Debug;
 		};
@@ -592,7 +628,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrumdingerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScrumdingerApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scrumdinger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scrumdinger";
 			};
 			name = Release;
 		};
@@ -633,7 +669,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBBDAD2D2B02B3F900F2BC9C /* Build configuration list for PBXProject "ScrumdingerApp" */ = {
+		CBBDAD2D2B02B3F900F2BC9C /* Build configuration list for PBXProject "Scrumdinger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBBDAD542B02B3FA00F2BC9C /* Debug */,
@@ -642,7 +678,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBBDAD562B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "ScrumdingerApp" */ = {
+		CBBDAD562B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "Scrumdinger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBBDAD572B02B3FA00F2BC9C /* Debug */,
@@ -651,7 +687,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBBDAD592B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "ScrumdingerAppTests" */ = {
+		CBBDAD592B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "ScrumdingerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBBDAD5A2B02B3FA00F2BC9C /* Debug */,
@@ -660,7 +696,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBBDAD5C2B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "ScrumdingerAppUITests" */ = {
+		CBBDAD5C2B02B3FA00F2BC9C /* Build configuration list for PBXNativeTarget "ScrumdingerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBBDAD5D2B02B3FA00F2BC9C /* Debug */,
