@@ -1,5 +1,5 @@
 //
-//  ScrumdingerAppApp.swift
+//  ScrumdingerApp.swift
 //  ScrumdingerApp
 //
 //  Created by Parth Joshi on 11/13/23.
@@ -46,3 +46,10 @@ struct ScrumdingerApp: App {
         }
     }
 }
+
+/// 1. Challenge yourself to add a new feature to Scrumdinger. Try using [EventKit](https://developer.apple.com/documentation/eventkit) to schedule meetings and receive reminders that sync with Calendar. Or consider how you can adapt Scrumdinger to build an app of your own, like an interval stopwatch.
+/// 2. Explore [Apple Developer Documentation](https://developer.apple.com/documentation), and browse through the comprehensive API reference library and sample code projects to find inspiration for your next project.
+/// 3. [Developer Forums](https://developer.apple.com/forums/tags/swiftui)
+/// 4. [Managing Model data](https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app)
+/// 5. [App Essentials: SwiftUI](https://developer.apple.com/videos/play/wwdc2020/10037/)
+/// 6. [Demystify SwiftUI](https://developer.apple.com/videos/play/wwdc2021/10022/)
